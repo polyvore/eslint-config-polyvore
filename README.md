@@ -1,4 +1,4 @@
-# @polyvore/eslint-config-polyvore
+# eslint-config-polyvore
 
 This package provides Polyvore's eslint rules as an extensible/shared config.
 
@@ -12,10 +12,10 @@ To use this module:
 After extending from the shared config, you can further overwrite rules following
 the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
 
-### @polyvore/eslint-config-polyvore OR @polyvore/eslint-config-polyvore/es5
+### eslint-config-polyvore OR eslint-config-polyvore/es5
 
 Applies polyvore's rules for ES5 applications
 
-### @polyvore/eslint-config-polyvore/es6
+### eslint-config-polyvore/es6
 
 Extends our ES5 config and adds ES6-specific rules
