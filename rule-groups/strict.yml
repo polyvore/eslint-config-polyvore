@@ -1,0 +1,2 @@
+rules:
+    strict: [0] # require effective use of strict mode directives
