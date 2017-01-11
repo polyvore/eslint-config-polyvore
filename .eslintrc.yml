@@ -1,4 +1,4 @@
 root: true
 env:
     node: true
-extends: './es5.js'
+extends: './es6.js'
