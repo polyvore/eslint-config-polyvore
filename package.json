@@ -1,13 +1,12 @@
 {
   "name": "eslint-config-polyvore",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "npmjs@polyvore.com",
   "description": "Polyvore's ESLint extensible config",
   "main": "es5.js",
   "repository": "https://github.com/polyvore/eslint-config-polyvore.git",
   "devDependencies": {
-    "eslint": "^2.2.0",
-    "eslint-plugin-react": "^4.2.1"
+    "eslint": "^2.2.0"
   },
   "peerDependencies": {
     "eslint": "^2.2.0"
