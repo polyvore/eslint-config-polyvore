@@ -1,5 +1,7 @@
 rules:
-    array-bracket-spacing: [2, 'always'] # enforce spacing inside array brackets
+    array-bracket-newline: [2, { multiline: true }] # enforce linebreaks after opening and before closing array brackets
+    array-bracket-spacing: [2, 'always'] # enforce consistent spacing inside array brackets
+    array-element-newline: [0] # enforce line breaks after each array element
     block-spacing: [2, 'always'] # disallow or enforce spaces inside of single line blocks
     brace-style: # enforce one true brace style
         - 2
@@ -32,16 +34,17 @@ rules:
     line-comment-position: [0] # enforce position of line comments
     linebreak-style: [2] # disallow mixed 'LF' and 'CRLF' as linebreaks
     lines-around-comment: [0] # enforce empty lines around comments
-    lines-around-directive: [2, 'always'] # require or disallow newlines around directives
     max-depth: [2] # specify the maximum depth that blocks can be nested
     max-len: # specify the maximum length of a line in your program
         - 2
         -
-            code: 80
-            comments: 120
-            ignoreComments: true
-            ignoreTrailingComments: true
-            ignoreUrls: true
+            code: 80 # enforces a maximum line length
+            tabWidth: 4 # specifies the character width for tab characters
+            comments: 120 # enforces a maximum line length for comments
+            ignoreUrls: true # ignores lines that contain a URL
+            ignoreStrings: true # ignores lines that contain a double-quoted or single-quoted string
+            ignoreTemplateLiterals: true # ignores lines that contain a template literal
+            ignoreRegExpLiterals: true # ignores lines that contain a RegExp literal
     max-lines: [0] # enforce a maximum number of lines per file
     max-nested-callbacks: [2, 4] # specify the maximum depth callbacks can be nested
     max-params: [2, 3] # limits the number of parameters that can be used in the function declaration
@@ -50,8 +53,6 @@ rules:
     multiline-ternary: [0] # enforce newlines between operands of ternary expressions
     new-cap: [2] # require a capital letter for constructors
     new-parens: [2] # disallow the omission of parentheses when invoking a constructor with no arguments
-    newline-after-var: [0] # require or disallow an empty newline after variable declarations
-    newline-before-return: [0] # require an empty line before return statements
     newline-per-chained-call: # enforce newline after each call when chaining the calls
         - 2
         - { ignoreChainWithDepth: 4 }
@@ -62,6 +63,7 @@ rules:
     no-lonely-if: [2] # disallow if as the only statement in an else block
     no-mixed-operators: [2] # disallow mixed binary operators
     no-mixed-spaces-and-tabs: [2] # disallow mixed spaces and tabs for indentation
+    no-multi-assign: [2] # disallow use of chained assignment expressions
     no-multiple-empty-lines: # disallow multiple empty lines
         - 2
         -
@@ -79,6 +81,7 @@ rules:
     no-underscore-dangle: [0] # disallow dangling underscores in identifiers
     no-unneeded-ternary: [2] # disallow the use of ternary operators when a simpler alternative exists
     no-whitespace-before-property: [2] # disallow whitespace before properties
+    nonblock-statement-body-position: [2] # enforce the location of single-line statements
     object-curly-newline: # enforce consistent line breaks inside braces
         - 2
         - { multiline: true }
@@ -89,11 +92,13 @@ rules:
     operator-assignment: [2, 'always'] # require assignment operator shorthand where possible or prohibit it entirely
     operator-linebreak: [2, 'after'] # enforce operators to be placed before or after line breaks
     padded-blocks: [2, 'never'] # enforce padding within blocks
+    padding-line-between-statements: [0] # require or disallow padding lines between statements
     quote-props: [2, 'as-needed'] # require quotes around object literal property names
     quotes: [2, 'single', 'avoid-escape'] # specify whether backticks, double or single quotes should be used
     require-jsdoc: [0] # Require JSDoc comment
     semi: [2, 'always'] # require or disallow use of semicolons instead of ASI
     semi-spacing: [2] # enforce spacing before and after semicolons
+    semi-style: [2, 'last'] # enforce location of semicolons
     sort-keys: [0] # require object keys to be sorted
     sort-vars: [0] # require variables within the same declaration block to be sorted
     space-before-blocks: [2, 'always'] # require or disallow a space before blocks
@@ -102,5 +107,7 @@ rules:
     space-infix-ops: [2] # require spaces around operators
     space-unary-ops: [2] # require or disallow spaces before/after unary operators
     spaced-comment: [2, 'always'] # require or disallow a space immediately following the // or /* in a comment
+    switch-colon-spacing: [2] # enforce spacing around colons of switch statements
+    template-tag-spacing: [2] # require or disallow spacing between template tags and their literals
     unicode-bom: [2, 'never'] # require or disallow Unicode byte order mark (BOM)
     wrap-regex: [2] # require regex literals to be wrapped in parentheses

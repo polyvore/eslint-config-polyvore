@@ -2,6 +2,7 @@ rules:
     callback-return: [2, ['callback', 'cb', 'done', 'next']] # enforce return after a callback
     global-require: [2] # enforce require() on top-level module scope
     handle-callback-err: [2] # enforce error handling in callbacks
+    no-buffer-constructor: [2] # disallow use of the Buffer() constructor
     no-mixed-requires: [2] # disallow mixing regular variable and require declarations
     no-new-require: [2] # disallow use of new operator with the require function
     no-path-concat: [2] # disallow string concatenation with __dirname and __filename

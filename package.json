@@ -1,14 +1,14 @@
 {
   "name": "eslint-config-polyvore",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "author": "npmjs@polyvore.com",
   "description": "Polyvore's ESLint extensible config",
   "main": "es6.js",
   "repository": "https://github.com/polyvore/eslint-config-polyvore.git",
   "devDependencies": {
-    "eslint": "^3.13.1"
+    "eslint": "^4.0.0"
   },
   "peerDependencies": {
-    "eslint": "^3.13.1"
+    "eslint": "^4.0.0"
   }
 }
